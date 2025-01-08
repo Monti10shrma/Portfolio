@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>MANVENDRA SHARMA</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>MERN STACK <span>DEVELOPER</span></p>
+                <h1>Hi, I'm <span>Manvendra</span> <br>from Meerut</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="About.jpg" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My Name is Manvendra Sharma and i m from Meerut i have done my Master Degree(MCA) From Chandigarh University.
+                        And recently I am  Full Stack Developer Trainee from ASB Mohali.
+                         Aspiring to build scalable and efficient web applications while continuously learning new technologies."
+
+                    </p>
+                         
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contants active-tab " id="skills">
+                        <ul>
+                            <li><span>MERN STACK</span><br>  DEVELOPER</li>
+                            <li><span>JAVA</span><br>  DEVELOPER</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="experience">
+                        <ul>
+                            
+                            <li><span>RECENT PASSOUT MASTER DEGREE</span><br> FRESHERS</li>
+                            <li><span>PROJECTS</span><br>OCHI WEBSITE </li>
+                            <li><span>PROJECTS</span><br>PERSONAL PORTFOLIO </li>
+                            <li><span>PROJECTS</span><br>UBER CLONE </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contants" id="education">
+                        <ul>
+                            <li><span>JULY-2024 to DEC-2024</span><br>MERN STACK  TRAINEE</li>
+                            <li><span>2022-2024</span><br> MCA </li>
+                            <li><span>2019-2022</span><br> BSC (Computer Scince)</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list"> 
+                <div class="project-item">
+                  
+                    <h2>UBER Clone(In Progress)</h2>
+                    <p>The Uber Clone is a web application designed to simplify the Process of Obtaining and Managing rides for all Passingers</p>
+                      <h5> Technology Used FrontEnd(React.Js and JavaScript) Backend(Node.js and Mongodb) and basic HTML Talwind CSS and Bootstrap </h5>
+                    <a href="#">Major Project</a>
+                </div>
+    
+                <div class="project-item">
+                  
+                    <h2>OCHI Website</h2>
+                    <p>Ochi is a strategic presentation design agency that specializes in creating customized, high-impact presentations for businesses.
+                       Their focus is on helping companies effectively communicate complex ideas, pitch products, and raise funds.</p>
+                    <h5>Technologies: React.js, Tailwind CSS, JavaScript, GSAP Animations</h5>
+                    <a href="#">Major Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        </div>
+    </div>
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="uber1.jpg" alt="uber">
+                </div>
+                <div class="work">
+                    <img src="oclon.jpg" alt="uber">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

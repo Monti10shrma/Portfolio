@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    color: black;
+    
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(monty.jpg);
+    background-size: cover;
+    background-position: right;
+    
+}
+
+#header h1{
+    font-size: 30px;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px ;
+}
+nav ul li a{
+
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: goldenrod;
+  position: absolute;
+  left: 0%;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+
+    color: gold;
+}
+
+.header-text p span{
+    color: #ff004f;
+}
+/*about*/
+#about {
+    padding: 80px 0;
+    color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-col-2 {
+    flex-basis: 65%;
+    padding: 20px;
+}
+
+.sub-title {
+    font-size: 24px;  
+    font-weight: 600;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
+    flex-wrap: nowrap;
+    justify-content: center;  
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.5s;
+}
+.tab-links.active-link ::after{
+    width: 100%;
+
+}
+
+.tab-links:hover::after {
+    width: 100%;
+}
+.tab-contants ul li {
+    list-style: none;
+    margin-bottom: 10px;  
+}
+
+.tab-contants ul li span {
+    color: red;
+    font-size: medium;  
+}
+.tab-contants{
+    display: none;
+}
+.tab-contants.active-tab{
+    display: block;
+}
+
+/*projects*/
+
+#projects {
+    padding: 30px 0;  
+}
+
+.project-list {
+    display: flex;  
+    justify-content: space-between;
+    grid-gap:150px;
+    margin-top: 40px;
+}
+.project-list div{
+    background: blueviolet;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;
+   transition: background 0.5s , transform 0.5s;
+}
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.project-list div a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    background:peru;
+    transform: translateY(-10px);
+
+}
+
+.work-list{
+    display: flex;  
+    justify-content: space-between;
+    grid-gap:10px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
